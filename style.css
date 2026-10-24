@@ -1,0 +1,335 @@
+body {
+  height: 100vh;
+  padding-top: 20px;
+}
+.navbar-brand {
+  font-family: "Lexend Zetta", sans-serif;
+  color: rgba(251 250 218) !important;
+}
+.nav-item .nav-link {
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  margin: 0px;
+  color: rgba(251 250 218);
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #e6e147;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+.Hero {
+  margin-top: 100px;
+}
+.lgin{
+  visibility: hidden;
+  position: absolute;
+}
+.login-button{
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: "Sansita Swashed", system-ui;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1.5px solid rgba(251 250 218);
+  transition: 0.3s background-color;
+  margin-right: 5px;
+}
+.login-button:hover{
+  background-color: rgba(251 250 218);
+  color: #000;
+}
+img {
+  filter: drop-shadow(10px 20px 20px black);
+}
+.Text-1 {
+  margin: 0.5;
+  font-family: Lexend Zetta, sans-serif;
+  color: #adbc9f !important;
+}
+.Text-2 {
+  margin: 0.5;
+  font-family: "Sansita Swashed", system-ui;
+  color: rgba(251 250 218);
+}
+.Text-3 {
+  font-size: 10rem;
+  margin: 0.5;
+  font-family: "Lexend Zetta", sans-serif;
+  color: #adbc9f !important;
+}
+
+.menu-header {
+  font-family: "Lexend Zetta", sans-serif;
+  color: white;
+}
+
+.colom1 {
+  font-family: "Bowlby One", sans-serif;
+  color: #1e1e1e;
+}
+.colom2 {
+  font-family: "inter";
+}
+
+.nav-link:hover {
+  color: #e6e147 !important;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #e6e147 !important;
+}
+.navbar-toggler.custom-toggler {
+  border-color: #fbfada; /* Ganti dengan warna yang diinginkan */
+}
+.navbar-toggler.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(251, 250, 218, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar .navbar-nav .nav-link {
+  color: #fbfada; /* Ganti dengan warna yang diinginkan */
+}
+svg {
+  color: rgba(251 250 218);
+}
+.navbar-toggler {
+  border: 1.5px solid #fbfada !important;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #fbfada !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+  box-shadow: 0 0 0 0.2rem rgba(251, 250, 218, 0.35) !important;
+}
+
+.navbar-toggler svg,
+.navbar-toggler-new svg {
+  width: 28px;
+  height: 28px;
+  fill: #fbfada !important;
+  color: #fbfada !important;
+}
+
+@media (max-width: 575px){
+  .lgin{
+    visibility: visible;
+    position: relative;
+  }
+  .login-button{
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+/* Burgerverse Offcanvas */
+.offcanvas.burgerverse-menu {
+  --bs-offcanvas-bg: transparent;
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas.burgerverse-menu {
+    background: linear-gradient(165deg, #0d2a20 0%, #12372a 42%, #1a4a38 100%) !important;
+    border-left: 2px solid rgba(230, 225, 71, 0.4);
+    width: min(320px, 88vw);
+  }
+}
+
+@media (min-width: 992px) {
+  .offcanvas.burgerverse-menu {
+    background: transparent !important;
+    border-left: 0;
+    width: auto;
+  }
+}
+
+.burgerverse-menu .offcanvas-header {
+  border-bottom: 1px solid rgba(173, 188, 159, 0.28);
+  padding: 1.25rem 1.5rem;
+  align-items: flex-start;
+}
+
+.offcanvas-brand-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.offcanvas-brand {
+  font-family: "Lexend Zetta", sans-serif;
+  color: #fbfada;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+}
+
+.offcanvas-tagline {
+  font-family: "Sansita Swashed", system-ui;
+  color: #adbc9f;
+  font-size: 0.9rem;
+}
+
+.btn-close-menu {
+  background: transparent;
+  border: 1.5px solid #fbfada;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #fbfada;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  flex-shrink: 0;
+}
+
+.btn-close-menu:hover {
+  background-color: #fbfada;
+  color: #12372a;
+}
+
+.btn-close-menu svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  filter: none;
+}
+
+.offcanvas-accent {
+  position: relative;
+  height: 52px;
+  margin-bottom: 0.75rem;
+}
+
+.offcanvas-accent .orbit {
+  position: absolute;
+  inset: 6px auto auto 0;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid rgba(230, 225, 71, 0.55);
+  border-radius: 50%;
+  animation: orbit-spin 8s linear infinite;
+}
+
+.offcanvas-accent .orbit::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 -5px;
+  border-radius: 50%;
+  background: #e6e147;
+  box-shadow: 0 0 12px rgba(230, 225, 71, 0.55);
+}
+
+.offcanvas-accent .orbit-dot {
+  position: absolute;
+  top: 18px;
+  left: 56px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #adbc9f;
+  box-shadow: 18px 8px 0 #fbfada, 36px -4px 0 #e6e147;
+}
+
+@keyframes orbit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.offcanvas-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e6e147, transparent);
+  margin: 1.25rem 0 1rem;
+  opacity: 0.85;
+}
+
+.offcanvas-promo {
+  font-family: "Sansita Swashed", system-ui;
+  color: #fbfada;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  margin-bottom: 0.85rem;
+}
+
+.offcanvas-cta {
+  display: inline-block;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 0.95rem;
+  color: #e6e147;
+  text-decoration: none;
+  border: 1.5px solid #e6e147;
+  border-radius: 20px;
+  padding: 8px 22px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.offcanvas-cta:hover {
+  background-color: #e6e147;
+  color: #12372a;
+}
+
+.offcanvas-meta {
+  margin-top: 1.35rem;
+  color: #adbc9f;
+  font-family: "Lexend Zetta", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+}
+
+.offcanvas-meta p {
+  margin-bottom: 0.45rem;
+}
+
+.offcanvas-social {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.offcanvas-social a {
+  color: #fbfada;
+  text-decoration: none;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.offcanvas-social a:hover {
+  color: #e6e147;
+}
+
+@media (max-width: 991.98px) {
+  .burgerverse-menu .offcanvas-body {
+    padding: 1.35rem 1.5rem 1.75rem;
+  }
+
+  .burgerverse-menu .navbar-nav {
+    gap: 0.15rem;
+  }
+
+  .burgerverse-menu .nav-item .nav-link {
+    font-size: 1.4rem;
+    padding: 0.7rem 0;
+    margin: 0 !important;
+  }
+}
