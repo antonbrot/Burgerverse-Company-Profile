@@ -1,0 +1,240 @@
+body {
+  height: 100vh;
+  padding-top: 20px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-box {
+  width: 400px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fda085;
+  font-size: 12px;
+}
+
+.login-box button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #333;
+  background: #fe921e;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.login-box button:hover {
+  background: #f6d365;
+  color: #fff;
+}
+
+.login-box a {
+  color: #333;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+.login-box a:hover {
+  color: #fda085;
+}
+
+.navbar-brand {
+  font-family: "Lexend Zetta", sans-serif;
+  color: rgba(251 250 218) !important;
+}
+.nav-item .nav-link {
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  margin: 0px;
+  color: rgba(251 250 218);
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #e6e147;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+.Hero {
+  margin-top: 100px;
+}
+.lgin{
+  visibility: hidden;
+  position: absolute;
+}
+.login-button{
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: "Sansita Swashed", system-ui;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1.5px solid rgba(251 250 218);
+  transition: 0.3s background-color;
+  margin-right: 5px;
+}
+.login-button:hover{
+  background-color: rgba(251 250 218);
+  color: #000;
+}
+img {
+  filter: drop-shadow(10px 20px 20px black);
+}
+.Text-1 {
+  margin: 0.5;
+  font-family: Lexend Zetta, sans-serif;
+  color: #adbc9f !important;
+}
+.Text-2 {
+  margin: 0.5;
+  font-family: "Sansita Swashed", system-ui;
+  color: rgba(251 250 218);
+}
+.Text-3 {
+  font-size: 10rem;
+  margin: 0.5;
+  font-family: "Lexend Zetta", sans-serif;
+  color: #adbc9f !important;
+}
+
+.menu-header {
+  font-family: "Lexend Zetta", sans-serif;
+  color: white;
+}
+
+.colom1 {
+  font-family: "Bowlby One", sans-serif;
+  color: #1e1e1e;
+}
+.colom2 {
+  font-family: "inter";
+}
+
+.nav-link:hover {
+  color: #e6e147 !important;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #e6e147 !important;
+}
+.navbar-toggler.custom-toggler {
+  border-color: #fbfada; /* Ganti dengan warna yang diinginkan */
+}
+.navbar-toggler.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(251, 250, 218, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar .navbar-nav .nav-link {
+  color: #fbfada; /* Ganti dengan warna yang diinginkan */
+}
+svg {
+  color: rgba(251 250 218);
+}
+.navbar-toggler {
+  border: 1.5px solid #fbfada !important;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #fbfada !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+  box-shadow: 0 0 0 0.2rem rgba(251, 250, 218, 0.35) !important;
+}
+
+.navbar-toggler svg,
+.navbar-toggler-new svg {
+  width: 28px;
+  height: 28px;
+  fill: #fbfada !important;
+  color: #fbfada !important;
+}
+
+@media (max-width: 575px){
+  .lgin{
+    visibility: visible;
+    position: relative;
+  }
+  .login-button{
+    visibility: hidden;
+    position: absolute;
+  }
+}
