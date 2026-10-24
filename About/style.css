@@ -1,0 +1,134 @@
+.navbar-brand {
+  font-family: "Lexend Zetta", sans-serif;
+  color: rgba(251 250 218) !important;
+}
+.nav-item .nav-link {
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  margin: 20px;
+  color: rgba(251 250 218);
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #e6e147;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+.container {
+  margin-top: 50px;
+}
+.Text-1 {
+  margin: 0.5;
+  font-family: Lexend Zetta, sans-serif;
+  color: #adbc9f !important;
+}
+.Text-2 {
+  margin: 0.5;
+  font-family: "Sansita Swashed", system-ui;
+  color: rgba(251 250 218);
+}
+.Text-3 {
+  font-size: 10rem;
+  margin: 0.5;
+  font-family: "Lexend Zetta", sans-serif;
+  color: #adbc9f !important;
+}
+
+.menu-header {
+  font-family: "Lexend Zetta", sans-serif;
+  color: white;
+}
+
+.colom1 {
+  font-family: "Bowlby One", sans-serif;
+  color: #1e1e1e;
+}
+.colom2 {
+  font-family: "inter";
+}
+
+.nav-link:hover {
+  color: #e6e147 !important;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #e6e147 !important;
+}
+.navbar-toggler.custom-toggler {
+  border-color: #fbfada; /* Ganti dengan warna yang diinginkan */
+}
+.navbar-toggler.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(251, 250, 218, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar .navbar-nav .nav-link {
+  color: #fbfada; /* Ganti dengan warna yang diinginkan */
+}
+svg {
+  color: rgba(251 250 218);
+}
+.navbar-toggler {
+  border: 1.5px solid #fbfada !important;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #fbfada !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+  box-shadow: 0 0 0 0.2rem rgba(251, 250, 218, 0.35) !important;
+}
+
+.navbar-toggler svg,
+.navbar-toggler-new svg {
+  width: 28px;
+  height: 28px;
+  fill: #fbfada !important;
+  color: #fbfada !important;
+}
+body {
+  padding-top: 20px; /* Adjust depending on the height of your navbar */
+}
+
+.navbar-brand {
+  font-family: "Lexend Zetta", sans-serif;
+  color: #fbfada !important;
+}
+
+.nav-item .nav-link {
+  font-family: "Sansita Swashed", cursive;
+  margin: 20px;
+  color: #fbfada;
+}
+
+.nav-link:hover {
+  color: #e6e147 !important;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(251, 250, 218, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+@media (max-width: 575px){
+  .lgin{
+    visibility: visible;
+    position: relative;
+  }
+  .login-button{
+    visibility: hidden;
+    position: absolute;
+  }
+}
+@media (max-width: 991px){
+  
+}
