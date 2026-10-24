@@ -1,0 +1,124 @@
+body{
+    padding: 30px;
+    background-color: #12372a !important;
+}
+.navbar-brand {
+    font-family: "Lexend Zetta", sans-serif;
+    color: rgba(251 250 218) !important;
+  }
+  .nav-item .nav-link {
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    margin: 20px;
+    color: rgba(251 250 218);
+    position: relative;
+    text-decoration: none;
+  }
+
+  .nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #e6e147;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-item .nav-link:hover::after,
+  .navbar-nav .nav-link.active::after {
+    width: 100%;
+  }
+  .nav-link:hover {
+    color: #e6e147 !important;
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
+    color: #e6e147 !important;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+.form-label{
+    color: white;
+}
+
+
+.container{
+    width: 60%;
+    padding: 55px;
+    border-radius: 0 !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.row{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+   
+}
+.col-md-7{
+    padding: 20px;
+}
+.col-md-5{
+    background: #e6e147;
+    padding: 20px;
+    color: white;
+    border-color: #e6e147;
+
+}
+.form-control {
+    height: 52px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    border-radius: 2px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bi{
+    font-size: 20px;
+}
+
+.navbar-toggler {
+  border: 1.5px solid #fbfada !important;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #fbfada !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+  box-shadow: 0 0 0 0.2rem rgba(251, 250, 218, 0.35) !important;
+}
+
+.navbar-toggler svg,
+.navbar-toggler-new svg {
+  width: 28px;
+  height: 28px;
+  fill: #fbfada !important;
+  color: #fbfada !important;
+}
+.d-flex p{
+    font-size: 18px;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+@media only screen and (max-width:600px){
+    .container{
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 90%;
+    }
+}
