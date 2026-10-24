@@ -1,0 +1,118 @@
+body{
+    padding: 30px;
+    background-color: #12372a !important;
+}
+.navbar-brand {
+    font-family: "Lexend Zetta", sans-serif;
+    color: rgba(251 250 218) !important;
+  }
+  .nav-item .nav-link {
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    margin: 20px;
+    color: rgba(251 250 218);
+    position: relative;
+    text-decoration: none;
+  }
+
+  .nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #e6e147;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-item .nav-link:hover::after,
+  .navbar-nav .nav-link.active::after {
+    width: 100%;
+  }
+  .nav-link:hover {
+    color: #e6e147 !important;
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
+    color: #e6e147 !important;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(1) brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  .column img:hover {
+    filter: grayscale(0);
+  }
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  .Gallery{
+    padding-top: 100px;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column img {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+  @media (max-width: 575px){
+    .lgin{
+      visibility: visible;
+      position: relative;
+    }
+    .login-button{
+      visibility: hidden;
+      position: absolute;
+    }
+  }
+  @media (max-width: 991px){
+    
+  }
+
+.navbar-toggler {
+  border: 1.5px solid #fbfada !important;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #fbfada !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+  box-shadow: 0 0 0 0.2rem rgba(251, 250, 218, 0.35) !important;
+}
+
+.navbar-toggler svg,
+.navbar-toggler-new svg {
+  width: 28px;
+  height: 28px;
+  fill: #fbfada !important;
+  color: #fbfada !important;
+}
+  
